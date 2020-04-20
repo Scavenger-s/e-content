@@ -1,4 +1,4 @@
-package com.cusx.content.service.impl;
+package cn.e3mall.content.service.impl;
 
 import java.util.Date;
 import java.util.List;
@@ -8,17 +8,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
-import com.cusx.commons.jedis.JedisClient;
-import com.cusx.commons.utils.E3Result;
-import com.cusx.commons.utils.JsonUtils;
-import com.cusx.content.service.ContentService;
-import com.cusx.mapper.TbContentMapper;
-import com.cusx.pojo.TbContent;
-import com.cusx.pojo.TbContentExample;
-import com.cusx.pojo.TbContentExample.Criteria;
-
-
-
+import cn.e3mall.common.jedis.JedisClient;
+import cn.e3mall.common.utils.E3Result;
+import cn.e3mall.common.utils.JsonUtils;
+import cn.e3mall.content.service.ContentService;
+import cn.e3mall.mapper.TbContentMapper;
+import cn.e3mall.pojo.TbContent;
+import cn.e3mall.pojo.TbContentExample;
+import cn.e3mall.pojo.TbContentExample.Criteria;
 
 /**
  * 内容管理Service
@@ -73,7 +70,7 @@ public class ContentServiceImpl implements ContentService {
 		}
 		//如果没有查询数据库
 		TbContentExample example = new TbContentExample();
-		 Criteria criteria = example.createCriteria();
+		Criteria criteria = example.createCriteria();
 		//设置查询条件
 		criteria.andCategoryIdEqualTo(cid);
 		//执行查询
