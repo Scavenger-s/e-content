@@ -24,8 +24,6 @@ import com.cusx.pojo.TbContentExample.Criteria;
  * 内容管理Service
  * <p>Title: ContentServiceImpl</p>
  * <p>Description: </p>
- * <p>Company: www.itcast.cn</p> 
- * @version 1.0
  */
 @Service
 public class ContentServiceImpl implements ContentService {
@@ -56,7 +54,6 @@ public class ContentServiceImpl implements ContentService {
 	 * <p>Description: </p>
 	 * @param cid
 	 * @return
-	 * @see cn.e3mall.content.service.ContentService#getContentListByCid(long)
 	 */
 	@Override
 	public List<TbContent> getContentListByCid(long cid) {
